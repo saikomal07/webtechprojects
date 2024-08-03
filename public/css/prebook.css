@@ -1,0 +1,124 @@
+/* Apply a consistent font across the site */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333; /* General text color */
+    background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #fff; /* White background for header and footer */
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for separation */
+}
+
+/* Container for the prebook section */
+.prebook-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Styling for the prebook header */
+.prebook-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #F9ED32;
+
+}
+
+/* Styling for the prebook content section */
+.prebook-content {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for separation */
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.prebook-content p {
+    margin-bottom: 1.5em;
+}
+
+/* Styling for the prebook form */
+.prebook-form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for separation */
+}
+
+.prebook-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.prebook-form label {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.prebook-form input[type="text"],
+.prebook-form input[type="email"],
+.prebook-form input[type="tel"],
+.prebook-form select,
+.prebook-form textarea {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.prebook-form input[type="submit"] {
+    background-color: #F9ED32; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button{
+    background-color: #F9ED32;
+    color:#333;
+    height:50px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.prebook-form input[type="submit"]:hover {
+    background-color: #F9ED32; /* Darker shade on hover */
+    transform: scale(1.01);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .prebook-container {
+        padding: 1em;
+    }
+
+    .prebook-header h1 {
+        font-size: 2em;
+    }
+
+    .prebook-form input[type="text"],
+    .prebook-form input[type="email"],
+    .prebook-form input[type="tel"],
+    .prebook-form select,
+    .prebook-form textarea {
+        font-size: 0.9em;
+    }
+
+    .prebook-form input[type="submit"] {
+        font-size: 0.9em;
+    }
+}

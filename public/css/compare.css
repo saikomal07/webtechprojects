@@ -1,0 +1,84 @@
+/* Base styles for the container */
+.compare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styles */
+.compare-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.compare-header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+.imagesec
+{
+    
+    height: 80vh;
+}
+#image
+{
+    width:80vw;
+    height:75vh;
+}
+/* Table styles */
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    font-size: 1em;
+    color: #333;
+}
+
+.compare-table th, .compare-table td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.compare-table th {
+    background-color: #FFF225;
+    color: black;
+    font-weight: 700;
+}
+
+.compare-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.compare-table td:hover {
+    background-color: #4f5657;
+    box-shadow: 0 0 10px rgba(77, 226, 184, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color:white;
+}
+
+/* Button styles */
+.buy-now-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    background-color: #FFF225;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #e6d817;
+    transform: scale(1.05);
+}

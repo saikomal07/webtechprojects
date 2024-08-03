@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container for the gateway content */
+.gateway-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Style for the heading */
+.gateway-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+/* Style for the introductory text */
+.gateway-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Style for the unordered list */
+.gateway-container ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Style for each list item */
+.gateway-container ul li {
+    background: url('/images/checkmark.svg') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Style for form labels */
+.gateway-container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #252525;
+}
+
+/* Style for form inputs */
+.gateway-container form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Style for the submit button */
+.gateway-container button {
+    background-color: #f9ed32;
+    color: #252525;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+.gateway-container button:hover {
+    background-color: #e0d41e;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .gateway-container {
+        padding: 20px;
+    }
+
+    .gateway-container h1 {
+        font-size: 1.5em;
+    }
+
+    .gateway-container p,
+    .gateway-container ul li,
+    .gateway-container form label,
+    .gateway-container form input,
+    .gateway-container button {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    font-weight: 500;
+    color: #333;
+}
+
+nav img {
+    max-height: 40px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5em 0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+    padding: 0.5em 1em;
+}
+.hero {
+    position: relative; /* Create a positioning context for absolute elements */
+    color: black; /* Text color */
+    text-align: center;
+    padding: 4em 1em;
+    height: 80vh;
+    overflow: hidden; /* Hide overflow from pseudo-elements */
+}
+
+.hero::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Absolute positioning to cover the section */
+    top: 0; /* Align to the top of the section */
+    left: 0; /* Align to the left of the section */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: url('/images/bike.png') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire section */
+    opacity: 0.5; /* Adjust opacity of the image (0 to 1) */
+    z-index: 1; /* Place it below the content but above the section background */
+}
+
+.hero-content {
+    position: relative; /* Ensure content is positioned relative to the .hero section */
+    z-index: 2; /* Place content above the background image */
+}
+.products {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+}
+
+.products h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+#imagesu{
+    width:300px;
+    height:500px;
+}
+
+.product-info {
+    flex: 2;
+}
+
+.product-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #218838;
+}
+
+
+#changing-word {
+    font-weight: bold;
+    color: #F9ED32;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.cta {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cta a {
+    color: #fff;
+}
+
+.cta:hover {
+    background-color: #e65b55;
+}
+
+/* Product Section Styles */
+.products {
+    padding: 2em 0;
+}
+
+/* USP Section Styles */
+.usp {
+    padding: 2em 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer a {
+    color: #ff6f61;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.usp-carousel {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.usp-item {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.usp-item h2 {
+    font-size: 1.5em;
+    color: #252525;
+}
+
+.usp-item p {
+    font-size: 1em;
+    color: #3C3C3C;
+    padding-left: 60px;
+    padding-right:60px;
+    margin:5px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}

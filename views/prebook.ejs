@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-book - Rhyno EV</title>
+    <link rel="stylesheet" href="/css/prebook.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <div class="prebook-container">
+        <div class="prebook-header">
+            <h1>Pre-book Your Rhyno EV</h1>
+        </div>
+        <div class="prebook-content">
+            <p>Secure your Rhyno EV today by pre-booking it through our form below. Experience the future of electric mobility with our state-of-the-art electric scooters.</p>
+        </div>
+        <div class="prebook-form">
+            <form action="/gateway" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email id">
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your contact no.">
+                
+                <label for="model">Model:</label>
+                <select id="model" name="model" required>
+                    <option value="SE03 Lite">SE03 Lite</option>
+                    <option value="SE03">SE03</option>
+                    <option value="SE03 Max">SE03 Max</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                
+                <button ><a href="/gateway">Pre-Book</a></button>
+            </form>
+        </div>
+    </div>
+    
+    <%- include('partials/footer') %>
+</body>
+</html>

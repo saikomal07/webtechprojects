@@ -1,0 +1,117 @@
+/* Apply a consistent font across the site */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333; /* General text color */
+    background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #fff; /* White background for header and footer */
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for separation */
+}
+
+/* Main content styling */
+main {
+    padding: 2em;
+}
+
+/* Styling for the rentals section */
+.rentals {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for separation */
+}
+
+.rentals h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #F9ED32;
+}
+
+.rentals p {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.rentals .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em; /* Space between buttons */
+    margin-top: 2em;
+}
+
+.rentals .app-buttons a {
+    text-decoration: none;
+}
+
+.rentals .app-buttons .app-button {
+    display: flex;
+    align-items: center;
+    background-color: #0077b5; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.rentals .app-buttons .app-button:hover {
+    background-color: #005582; /* Darker shade on hover */
+}
+
+.rentals .app-buttons .app-button img {
+    margin-right: 0.5em; /* Space between icon and text */
+    width: 20px; /* Adjust as needed */
+}
+
+/* Style for the container of app buttons */
+.app-buttons {
+    
+    gap: 1em; /* Add space between the images */
+  
+}
+
+/* Style for each app icon */
+.app-icon {
+    width: 30px; /* Set a consistent size for the images */
+    height: 30px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* Optional hover effect */
+.app-icon:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .rentals {
+        padding: 1em;
+    }
+
+    .rentals h1 {
+        font-size: 2em;
+    }
+
+    .rentals .app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rentals .app-buttons .app-button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+}
